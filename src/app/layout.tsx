@@ -6,8 +6,8 @@ import { twMerge } from "tailwind-merge";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Light Saas Landing Page",
-  description: "Template created by Frontend Tribe",
+  title: "Pathway to Productivity",
+  description: "Landing page for a SaaS company",
 };
 
 export default function RootLayout({
@@ -17,6 +17,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/favicon/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon/favicon-16x16.png"
+      />
       <body className={twMerge(dmSans.className, "antialiased bg-[#EAEEFE]")}>
         {children}
       </body>
